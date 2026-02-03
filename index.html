@@ -72,18 +72,34 @@
     <section class="hero text-center">
         <div class="container">
             <span class="badge badge-local mb-3">Locally Owned • Lakes Region NH</span>
-            <h1 class="display-5 fw-bold mt-3">Utility & Dump Trailer Rentals</h1>
+
+            <h1 class="display-5 fw-bold mt-3">
+                Trailer Rentals Made Simple
+            </h1>
+
             <p class="lead mt-3">
-                Simple pricing. Weekend-ready. No nonsense.<br>
-                Call or text to reserve.
+                Utility & dump trailers in the Lakes Region of New Hampshire.<br>
+                We’ll help make sure it tows safely — just call or text.
             </p>
 
             <div class="d-flex justify-content-center gap-3 mt-4">
                 <a href="tel:2539614982" class="btn btn-primary btn-lg">Call</a>
                 <a href="sms:2539614982" class="btn btn-outline-primary btn-lg">Text</a>
             </div>
+
+            <!-- Vehicle Compatibility Helper -->
+            <div class="mt-4">
+                <p class="fw-semibold mb-1">
+                    Will this trailer work with my vehicle?
+                </p>
+                <p class="text-muted mb-0">
+                    Tell us your truck or SUV, hitch size, and whether you have a brake controller —
+                    we’ll help you choose the right trailer.
+                </p>
+            </div>
         </div>
     </section>
+
 
     <!-- TRAILERS -->
     <section id="trailers" class="py-5">
@@ -188,6 +204,17 @@
         </div>
     </section>
 
+    <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+        <a href="tel:2539614982" class="btn btn-primary btn-lg">Call</a>
+        <a href="sms:2539614982" class="btn btn-outline-primary btn-lg">Text</a>
+
+        <!-- Vehicle Fit Check trigger -->
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#vehicleFitModal">
+            Vehicle Fit Check
+        </button>
+    </div>
+
+
     <!-- CONTACT -->
     <section id="contact" class="bg-dark text-white py-5">
         <div class="container text-center">
@@ -213,6 +240,143 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+    <!-- Vehicle Fit Check Modal -->
+    <div class="modal fade" id="vehicleFitModal" tabindex="-1" aria-labelledby="vehicleFitModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="vehicleFitModalLabel">Will this trailer work with my vehicle?
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="text-muted mb-4">
+                        Answer a few quick questions and we’ll help you pick the right trailer.
+                        (If you’re not sure, leave it blank — we can still help.)
+                    </p>
+
+                    <form id="vehicleFitForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold" for="vehicle">Vehicle (year/make/model)</label>
+                                <input class="form-control" id="vehicle" placeholder="e.g., 2021 Ford F-150 3.5L" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold" for="trailerType">Trailer you want</label>
+                                <select class="form-select" id="trailerType">
+                                    <option value="" selected>Not sure yet</option>
+                                    <option>5×10 Dump Trailer</option>
+                                    <option>6×12 Utility Trailer</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold" for="hitch">Hitch receiver size</label>
+                                <select class="form-select" id="hitch">
+                                    <option value="" selected>Not sure</option>
+                                    <option>2-inch</option>
+                                    <option>2.5-inch</option>
+                                    <option>1.25-inch</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold" for="brakeController">Brake controller?</label>
+                                <select class="form-select" id="brakeController">
+                                    <option value="" selected>Not sure</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold" for="rentalDates">Dates needed</label>
+                                <input class="form-control" id="rentalDates" placeholder="e.g., Sat–Sun (Mar 2–3)" />
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label fw-semibold" for="notes">What are you hauling?
+                                    (optional)</label>
+                                <textarea class="form-control" id="notes" rows="3"
+                                    placeholder="e.g., brush + small stumps / moving furniture / gravel"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-light border mt-4 mb-0">
+                            <div class="small">
+                                <span class="fw-semibold">Tip:</span> If you’re towing a dump trailer, you’ll usually
+                                need a <span class="fw-semibold">2-inch receiver</span>
+                                and a <span class="fw-semibold">brake controller</span>. If you’re unsure, we’ll walk
+                                you through it.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-between flex-wrap gap-2">
+                    <div class="text-muted small">
+                        Prefer talking? Call: <a href="tel:2539614982" class="text-decoration-none">253-961-4982</a>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <a id="smsFitLink" class="btn btn-primary" href="sms:2539614982">
+                            Text This Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const formIds = ["vehicle", "trailerType", "hitch", "brakeController", "rentalDates", "notes"];
+            const smsLink = document.getElementById("smsFitLink");
+
+            function buildMessage() {
+                const vehicle = document.getElementById("vehicle").value.trim();
+                const trailerType = document.getElementById("trailerType").value.trim();
+                const hitch = document.getElementById("hitch").value.trim();
+                const brakeController = document.getElementById("brakeController").value.trim();
+                const rentalDates = document.getElementById("rentalDates").value.trim();
+                const notes = document.getElementById("notes").value.trim();
+
+                let msg = "Vehicle Fit Check:%0A";
+                if (vehicle) msg += `- Vehicle: ${encodeURIComponent(vehicle)}%0A`;
+                if (trailerType) msg += `- Trailer: ${encodeURIComponent(trailerType)}%0A`;
+                if (hitch) msg += `- Hitch: ${encodeURIComponent(hitch)}%0A`;
+                if (brakeController) msg += `- Brake controller: ${encodeURIComponent(brakeController)}%0A`;
+                if (rentalDates) msg += `- Dates: ${encodeURIComponent(rentalDates)}%0A`;
+                if (notes) msg += `- Hauling: ${encodeURIComponent(notes)}%0A`;
+                msg += "Can you confirm what will tow safely and availability?";
+
+                return msg;
+            }
+
+            function updateSmsHref() {
+                // iOS vs Android differ slightly; this pattern works well for most:
+                const base = "sms:2539614982";
+                const message = buildMessage();
+                smsLink.setAttribute("href", `${base}?&body=${message}`);
+            }
+
+            formIds.forEach(id => {
+                const el = document.getElementById(id);
+                el.addEventListener("input", updateSmsHref);
+                el.addEventListener("change", updateSmsHref);
+            });
+
+            // Initialize on load
+            updateSmsHref();
+        })();
+    </script>
+
 
 </body>
 
