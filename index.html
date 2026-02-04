@@ -42,6 +42,10 @@
         .hero {
             padding-top: 5rem;
         }
+
+        .cowdog-primary-bg-1 {
+            background-color: #54ab94 !important;
+        }
     </style>
 </head>
 
@@ -71,15 +75,17 @@
     <!-- HERO -->
     <section class="hero text-center">
         <div class="container">
-            <span class="badge badge-local mb-3">Locally Owned • Lakes Region NH</span>
-
             <h1 class="display-5 fw-bold mt-3">
-                Trailer Rentals Made Simple
+                Good Dog, Good Trailers.
             </h1>
 
             <p class="lead mt-3">
-                Utility & dump trailers in the Lakes Region of New Hampshire.<br>
-                We’ll help make sure it tows safely — just call or text.
+                Reliable utility and dump trailer rentals for your next project.<br>
+                Weekend-ready with simple pricing and local pickup.<br>
+                <span class="badge badge-local text-white px-2 py-1 mt-2 cowdog-primary-bg-1">Serving the Lakes Region,
+                    NH</span>
+                <span class="badge badge-local text-white px-2 py-1 mt-2 cowdog-primary-bg-1">Veteran Owned &
+                    Operated</span>
             </p>
 
             <div class="d-flex justify-content-center gap-3 mt-4">
@@ -94,8 +100,12 @@
                 </p>
                 <p class="text-muted mb-0">
                     Tell us your truck or SUV, hitch size, and whether you have a brake controller —
-                    we’ll help you choose the right trailer.
+                    we'll help you choose the right trailer.
                 </p>
+                <button type="button" class="btn btn-success mt-2 cowdog-primary-bg-1" data-bs-toggle="modal"
+                    data-bs-target="#vehicleFitModal">
+                    Vehicle Fit Check
+                </button>
             </div>
         </div>
     </section>
@@ -110,19 +120,19 @@
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">5×10 Dump Trailer</h5>
+                            <h5 class="card-title">5 x 10 Dump Trailer</h5>
                             <p class="card-text">
                                 Perfect for cleanup jobs, small projects, and landscaping.
                             </p>
                             <ul class="list-unstyled">
-                                <li>✔ Electric brakes</li>
+                                <li>✔ 7,000lb gross vehicle weight (when loaded)</li>
+                                <li>✔ Capable of ~5,000lb loads</li>
+                                <li>✔ Tarp included</li>
                                 <li>✔ Ramps included</li>
-                                <li>✔ Brake controller required</li>
+                                <li>✔ Electric brakes</li>
                                 <li>✔ Half-ton capable (with tow package)</li>
+                                <li>✔ Brake controller required</li>
                             </ul>
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#vehicleFitModal">
-                                Vehicle Fit Check
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +140,7 @@
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">6×12 Utility Trailer</h5>
+                            <h5 class="card-title">6 x 12 Utility Trailer</h5>
                             <p class="card-text">
                                 Great for furniture, ATVs, yard equipment, and general hauling.
                             </p>
@@ -140,9 +150,6 @@
                                 <li>✔ No special equipment needed</li>
                                 <li>✔ Ideal for weekend moves</li>
                             </ul>
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#vehicleFitModal">
-                                Vehicle Fit Check
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -168,12 +175,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>5×10 Dump</td>
+                                <td>5 x 10 Dump</td>
                                 <td>$120</td>
                                 <td>$250</td>
                             </tr>
                             <tr>
-                                <td>6×12 Utility</td>
+                                <td>6 x 12 Utility</td>
                                 <td>$60</td>
                                 <td>$120</td>
                             </tr>
@@ -218,11 +225,11 @@
             <p class="lead">
                 📍 Lakes Region, New Hampshire<br>
                 📞 <a href="tel:2539614982" class="text-white text-decoration-none">253-961-4982</a><br>
-                🌐 cowdogtrailers.com
+                🌐 cowdogrentals.com
             </p>
 
-            <p class="mt-4 small text-muted">
-                Valid ID required. Renter responsible for damage. No trash disposal included.
+            <p class="mt-4 small text-white">
+                Valid driver's license required. Renter responsible for damage. No trash disposal included.
             </p>
         </div>
     </section>
@@ -251,8 +258,8 @@
 
                 <div class="modal-body">
                     <p class="text-muted mb-4">
-                        Answer a few quick questions and we’ll help you pick the right trailer.
-                        (If you’re not sure, leave it blank — we can still help.)
+                        Answer a few quick questions and we'll help you pick the right trailer.
+                        (If you're not sure, leave it blank — we can still help.)
                     </p>
 
                     <form id="vehicleFitForm">
@@ -266,8 +273,8 @@
                                 <label class="form-label fw-semibold" for="trailerType">Trailer you want</label>
                                 <select class="form-select" id="trailerType">
                                     <option value="" selected>Not sure yet</option>
-                                    <option>5×10 Dump Trailer</option>
-                                    <option>6×12 Utility Trailer</option>
+                                    <option>5 x 10 Dump Trailer</option>
+                                    <option>6 x 12 Utility Trailer</option>
                                 </select>
                             </div>
 
