@@ -27,10 +27,14 @@
 
         .hero {
             background: linear-gradient(135deg, #54ab94 0%, #3d8b73 100%);
-            padding: 6rem 1rem 5rem 1rem;
+            padding: 3rem 1rem;
             color: white;
             position: relative;
             overflow: hidden;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero::before {
@@ -197,7 +201,7 @@
     <section class="hero text-center">
         <div class="container">
             <img src="assets/cowdog-logo.png" alt="CowDog Rentals logo" class="mb-4"
-                style="width: 200px; height: 200px;">
+                style="width: 300px; height: 300px;">
 
             <h1 class="display-5 fw-bold mt-3">
                 Good Dog, Good Trailers.
@@ -217,24 +221,26 @@
                 <a href="tel:2539614982" class="btn btn-primary btn-lg">📞 Call Now</a>
                 <a href="sms:2539614982" class="btn btn-outline-primary btn-lg">💬 Text Us</a>
             </div>
+        </div>
+    </section>
 
-            <!-- Vehicle Compatibility Helper -->
-            <div class="vehicle-fit-box">
-                <p class="fw-bold mb-2 fs-5">
-                    Will this trailer work with my vehicle?
-                </p>
-                <p class="text-white mb-3" style="opacity: 0.9;">
-                    Not sure what you need? We'll help you choose the right trailer for your truck or SUV.
-                </p>
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#vehicleFitModal">
-                    Check Vehicle Compatibility
-                </button>
-            </div>
+    <!-- VEHICLE COMPATIBILITY -->
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <p class="fw-bold mb-2 fs-4" style="color: #2d6a5a;">
+                What can I tow with my vehicle?
+            </p>
+            <p class="mb-4" style="color: #4a4a4a; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Not sure what will work with your vehicle? We'll help you choose the right trailer!
+            </p>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#vehicleFitModal">
+                Check Vehicle Compatibility
+            </button>
         </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how" class="py-5">
+    <section id="how" class="py-5 bg-white">
         <div class="container">
             <h2 class="fw-bold mb-4 text-center">How It Works</h2>
 
@@ -257,7 +263,7 @@
 
 
     <!-- TRAILERS -->
-    <section id="trailers" class="py-5">
+    <section id="trailers" class="py-5 bg-light">
         <div class="container">
             <h2 class="fw-bold mb-4 text-center">Available Trailers</h2>
 
