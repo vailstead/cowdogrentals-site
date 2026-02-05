@@ -169,6 +169,19 @@
             background-color: #54ab94 !important;
         }
 
+        .btn-reserve {
+            background: linear-gradient(135deg, #54ab94 0%, #3d8b73 100%) !important;
+            border: none !important;
+            color: white !important;
+            font-weight: 600;
+        }
+
+        .btn-reserve:hover {
+            background: linear-gradient(135deg, #3d8b73 0%, #2c6a5a 100%) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(84, 171, 148, 0.4);
+        }
+
         @media (max-width: 768px) {
             .hero {
                 min-height: auto;
@@ -215,10 +228,15 @@
     <!-- HERO -->
     <section class="hero text-center">
         <div class="container">
-            <img src="assets/cowdog-logo.png" alt="CowDog Rentals logo" class="mb-4"
+            <img src="assets/cowdog-logo.png" alt="CowDog Rentals logo" class="mb-3"
                 style="width: 300px; height: 300px;">
 
-            <h1 class="display-5 fw-bold mt-3">
+            <h2 class="fw-bold mb-4"
+                style="font-size: 4rem; letter-spacing: 0.5px; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                CowDog Rentals
+            </h2>
+
+            <h1 class="display-5 fw-bold mt-3" style="font-size: 2.5rem;">
                 Good Dog, Good Trailers.
             </h1>
 
@@ -285,6 +303,8 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card h-100 d-flex flex-column">
+                        <img src="assets/dump_trailer.png" class="card-img-top" alt="5x10 Dump Trailer"
+                            style="height: 250px; object-fit: contain; padding: 1rem; background: #f8f9fa;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">5 x 10 Dump Trailer</h5>
                             <p class="card-text">
@@ -313,6 +333,10 @@
                                     </div>
                                 </div>
                                 <p class="small text-muted mb-0 mt-2">* Multi-day discounts available</p>
+                                <hr class="my-3">
+                                <div class="text-center">
+                                    <a href="tel:2539614982" class="btn btn-reserve w-100">Reserve Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,6 +344,8 @@
 
                 <div class="col-md-6">
                     <div class="card h-100 d-flex flex-column">
+                        <img src="assets/utility_trailer.png" class="card-img-top" alt="6x12 Utility Trailer"
+                            style="height: 250px; object-fit: contain; padding: 1rem; background: #f8f9fa;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">6 x 12 Utility Trailer</h5>
                             <p class="card-text">
@@ -345,6 +371,10 @@
                                     </div>
                                 </div>
                                 <p class="small text-muted mb-0 mt-2">* Multi-day discounts available</p>
+                                <hr class="my-3">
+                                <div class="text-center">
+                                    <a href="tel:2539614982" class="btn btn-reserve w-100">Reserve Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
