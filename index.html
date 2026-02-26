@@ -303,7 +303,7 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label fw-semibold" for="rqDate">Date</label>
-                                    <input class="form-control" id="rqDate" placeholder="e.g., Sat 6/15" />
+                                    <input type="date" class="form-control" id="rqDate" />
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label fw-semibold" for="rqTown">Town</label>
@@ -314,10 +314,10 @@
                                     <label class="form-label fw-semibold" for="rqPackage">What do you want?</label>
                                     <select class="form-select" id="rqPackage">
                                         <option value="" selected>Select</option>
-                                        <option>Backyard Party Pack (recommended)</option>
-                                        <option>Cornhole Set</option>
-                                        <option>Giant Tumble Tower (Jenga)</option>
-                                        <option>Giant Connect 4</option>
+                                        <option>Backyard Party Pack - $150 (recommended)</option>
+                                        <option>Cornhole - $60</option>
+                                        <option>Giant Tumble Tower - $60</option>
+                                        <option>Ladder Ball - $50</option>
                                         <option>Not sure / help me choose</option>
                                     </select>
                                 </div>
@@ -362,33 +362,46 @@
             <p class="text-center text-muted mb-5">Rental-quality, cleaned between rentals. Great for kids and adults.
             </p>
 
-            <div class="row text-center g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <div class="game-icon">🎯</div>
-                            <h5 class="fw-bold">Cornhole</h5>
-                            <p class="text-muted mb-0">Classic crowd-pleaser for any backyard, camp, or lake house.</p>
-                        </div>
-                    </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-8 order-2 order-lg-1">
+                    <h4 class="fw-bold mb-2">Cornhole</h4>
+                    <p class="text-muted mb-2">
+                        Classic crowd-pleaser for any backyard, camp, or lake house. Includes boards and bags.
+                    </p>
+                    <div class="fw-bold text-success fs-5">$60</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <div class="game-icon">🧱</div>
-                            <h5 class="fw-bold">Giant Tumble Tower</h5>
-                            <p class="text-muted mb-0">Oversized Jenga-style tower. A guaranteed hit at parties.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-4 order-1 order-lg-2">
+                    <img src="assets/cornhole.png" class="img-fluid rounded shadow-sm" alt="Cornhole set">
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <div class="game-icon">🟡</div>
-                            <h5 class="fw-bold">Giant Connect 4</h5>
-                            <p class="text-muted mb-0">Fast, fun, and easy for all ages. Great for groups.</p>
-                        </div>
-                    </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4 order-1 order-lg-1">
+                    <img src="assets/jenga.png" class="img-fluid rounded shadow-sm" alt="Giant tumble tower">
+                </div>
+                <div class="col-lg-8 order-2 order-lg-2">
+                    <h4 class="fw-bold mb-2">Giant Tumble Tower</h4>
+                    <p class="text-muted mb-2">
+                        Oversized Jenga-style tower. A guaranteed hit at parties and easy for all ages.
+                    </p>
+                    <div class="fw-bold text-success fs-5">$60</div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-8 order-2 order-lg-1">
+                    <h4 class="fw-bold mb-2">Ladder Ball</h4>
+                    <p class="text-muted mb-2">
+                        Fast-paced, competitive, and great for mixed-age groups. Includes bolas and ladder frame.
+                    </p>
+                    <div class="fw-bold text-success fs-5">$50</div>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2">
+                    <img src="assets/ladderball.png" class="img-fluid rounded shadow-sm" alt="Ladder ball set">
                 </div>
             </div>
 
@@ -423,8 +436,8 @@
                                 <hr class="my-3">
                                 <div class="d-flex justify-content-around mb-2">
                                     <div class="text-center">
-                                        <div class="fw-bold text-success fs-4">$300</div>
-                                        <div class="small text-muted">Weekend</div>
+                                        <div class="fw-bold text-success fs-4">$150</div>
+                                        <div class="small text-muted">All 3 games</div>
                                     </div>
                                 </div>
                                 <p class="small text-muted mb-0">* Delivery available (quote by town)</p>
@@ -441,23 +454,19 @@
                             <h5 class="fw-bold">Single Game</h5>
                             <p class="text-muted">Add a crowd favorite.</p>
                             <ul class="list-unstyled mb-4">
-                                <li>✔ Cornhole set</li>
-                                <li>✔ Giant Tumble Tower</li>
-                                <li>✔ Giant Connect 4</li>
+                                <li>✔ Cornhole: $60</li>
+                                <li>✔ Giant Tumble Tower: $60</li>
+                                <li>✔ Ladder Ball: $50</li>
                             </ul>
                             <div class="mt-auto">
                                 <hr class="my-3">
                                 <div class="d-flex justify-content-around mb-2">
                                     <div class="text-center">
-                                        <div class="fw-bold text-primary fs-4">$85</div>
-                                        <div class="small text-muted">Day</div>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="fw-bold text-success fs-4">$150</div>
-                                        <div class="small text-muted">Weekend</div>
+                                        <div class="fw-bold text-success fs-4">$50-60</div>
+                                        <div class="small text-muted">Per game</div>
                                     </div>
                                 </div>
-                                <p class="small text-muted mb-0">* Mix & match. Multi-game discounts available.</p>
+                                <p class="small text-muted mb-0">* Mix & match. Save with the Party Pack.</p>
                                 <hr class="my-3">
                                 <a href="#reserve" class="btn btn-reserve w-100">Reserve</a>
                             </div>
@@ -604,8 +613,8 @@
             <p class="lead mb-2">
                 📍 Lakes Region, New Hampshire<br>
                 📞 <a href="tel:6037220124" class="text-white text-decoration-none">603-722-0124</a><br>
-                ✉️ <a href="mailto:jon@cowdogrentals.com"
-                    class="text-white text-decoration-none">jon@cowdogrentals.com</a><br>
+                ✉️ <a href="mailto:info@cowdogrentals.com"
+                    class="text-white text-decoration-none">info@cowdogrentals.com</a><br>
                 🌐 cowdogrentals.com
             </p>
 
