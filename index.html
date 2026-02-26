@@ -3,22 +3,50 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CowDog Rentals | Utility & Dump Trailer Rentals</title>
+    <title>CowDog Rentals | Party Game Rentals (Lakes Region, NH)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/cowdog-logo.png">
     <link rel="apple-touch-icon" href="assets/cowdog-logo.png">
 
-
     <!-- SEO basics -->
     <meta name="description"
-        content="CowDog Rentals provides utility and dump trailer rentals in the Lakes Region of New Hampshire. Weekend-ready, simple pricing, local pickup.">
-    <meta name="keywords" content="trailer rental, dump trailer rental, utility trailer, Lakes Region NH">
+        content="CowDog Rentals provides rental-quality backyard party games in the Lakes Region of New Hampshire. Easy booking by text or call. Cornhole, Giant Jenga, Giant Connect 4, and more.">
+    <meta name="keywords"
+        content="party game rentals, backyard party rentals, lawn game rentals, cornhole rental, giant jenga rental, giant connect 4 rental, Lakes Region NH, Laconia NH, Meredith NH, Gilford NH">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CowDog Rentals | Party Game Rentals (Lakes Region, NH)">
+    <meta property="og:description"
+        content="Rental-quality backyard party games. Easy booking by text or call. Serving the Lakes Region of NH.">
+    <meta property="og:image" content="assets/cowdog-logo.png">
+    <meta property="og:type" content="website">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"LocalBusiness",
+      "name":"CowDog Rentals",
+      "url":"https://cowdogrentals.com",
+      "telephone":"+16037220124",
+      "areaServed":[
+        "Laconia, NH",
+        "Gilford, NH",
+        "Meredith, NH",
+        "Belmont, NH",
+        "Tilton, NH",
+        "Lakes Region, NH"
+      ],
+      "image":"https://cowdogrentals.com/assets/cowdog-logo.png",
+      "description":"Rental-quality backyard party game rentals in the Lakes Region of New Hampshire. Easy booking by text or call."
+    }
+  </script>
 
     <style>
         body {
@@ -54,18 +82,18 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
+            font-size: 3.0rem;
+            font-weight: 900;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             letter-spacing: -0.02em;
         }
 
         .hero .lead {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.95);
-            max-width: 700px;
-            margin: 0 auto 2rem;
+            max-width: 760px;
+            margin: 0 auto 1.5rem;
             line-height: 1.7;
         }
 
@@ -76,93 +104,45 @@
             font-size: 0.9rem;
             font-weight: 600;
             padding: 0.5rem 1rem !important;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
+            margin-bottom: 0.5rem;
+            display: inline-block;
         }
 
         .hero .btn-primary {
             background-color: #fff;
             color: #54ab94;
             border: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            padding: 1rem 2.5rem;
+            font-weight: 800;
+            font-size: 1.1rem;
+            padding: 0.95rem 2.2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .hero .btn-primary:hover {
             background-color: #f8f9fa;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
         }
 
         .hero .btn-outline-primary {
             color: white;
             border: 2px solid white;
-            font-weight: 700;
-            font-size: 1.2rem;
-            padding: 1rem 2.5rem;
+            font-weight: 800;
+            font-size: 1.1rem;
+            padding: 0.95rem 2.2rem;
             background-color: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .hero .btn-outline-primary:hover {
             background-color: white;
             color: #54ab94;
             border-color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .vehicle-fit-box {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-top: 3rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .vehicle-fit-box .btn-success {
-            background-color: #ffc107;
-            border: none;
-            color: #000;
-            font-weight: 700;
-            font-size: 1.1rem;
-            padding: 0.75rem 2rem;
-            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .vehicle-fit-box .btn-success:hover {
-            background-color: #ffcd38;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
-        }
-
-        .cta-container {
-            animation: fadeInUp 0.6s ease-out 0.3s both;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .navbar {
-            padding-top: 0.6rem;
-            padding-bottom: 0.6rem;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
         }
 
         .cowdog-primary-bg-1 {
@@ -173,7 +153,7 @@
             background: linear-gradient(135deg, #54ab94 0%, #3d8b73 100%) !important;
             border: none !important;
             color: white !important;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .btn-reserve:hover {
@@ -182,34 +162,67 @@
             box-shadow: 0 4px 12px rgba(84, 171, 148, 0.4);
         }
 
+        .sticky-cta {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1030;
+            padding: 0.6rem;
+            background: rgba(0, 0, 0, 0.78);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .sticky-cta .btn {
+            font-weight: 800;
+        }
+
+        .game-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(84, 171, 148, 0.12);
+            border: 1px solid rgba(84, 171, 148, 0.25);
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .small-muted {
+            color: #5c6b6b;
+        }
+
         @media (max-width: 768px) {
             .hero {
                 min-height: auto;
-                padding: 1.25rem 1rem;
+                padding: 1.25rem 1rem 4.5rem;
             }
 
             .hero h2 {
                 font-size: 1.75rem !important;
-                margin-bottom: 0.5rem !important;
+                margin-bottom: 0.4rem !important;
             }
 
             .hero h1 {
                 font-size: 1.35rem !important;
-                margin-bottom: 0.65rem !important;
-                margin-top: 0.5rem !important;
+                margin-bottom: 0.55rem !important;
+                margin-top: 0.4rem !important;
             }
 
             .hero .lead {
-                font-size: 0.9rem;
-                margin-top: 0.65rem !important;
-                margin-bottom: 0.65rem !important;
-                line-height: 1.4;
+                font-size: 0.92rem;
+                margin-top: 0.55rem !important;
+                margin-bottom: 0.55rem !important;
+                line-height: 1.45;
             }
 
             .hero .btn-primary,
             .hero .btn-outline-primary {
-                font-size: 0.875rem;
-                padding: 0.65rem 1.25rem;
+                font-size: 0.9rem;
+                padding: 0.7rem 1.1rem;
             }
 
             .badge-local {
@@ -217,18 +230,13 @@
                 padding: 0.35rem 0.6rem !important;
                 display: block;
                 margin: 0.35rem auto !important;
-                max-width: 250px;
+                max-width: 310px;
             }
 
             .hero img {
                 width: 140px !important;
                 height: 140px !important;
-                margin-bottom: 0.65rem !important;
-            }
-
-            .hero .cta-container {
-                margin-top: 0.75rem !important;
-                gap: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
             }
         }
     </style>
@@ -237,21 +245,21 @@
 <body>
 
     <!-- HERO -->
-    <section class="hero text-center">
+    <section class="hero text-center" id="top">
         <div class="container">
             <img src="assets/cowdog-logo.png" alt="CowDog Rentals logo" class="mb-3"
-                style="width: 300px; height: 300px;">
+                style="width: 260px; height: 260px;">
 
-            <h2 class="fw-bold mb-4"
-                style="font-size: 2.5rem; letter-spacing: 0.5px; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+            <h2 class="fw-bold mb-3"
+                style="font-size: 2.3rem; letter-spacing: 0.5px; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
                 CowDog Rentals
             </h2>
 
-            <h1 class="display-5 fw-bold mt-3">Trailer Rentals - Simple & Weekend-Ready</h1>
+            <h1 class="display-5 fw-bold mt-2">Backyard Party Game Rentals — Easy & Weekend-Ready</h1>
 
             <p class="lead mt-3">
-                Utility & dump trailers • Lakes Region, NH<br>
-                Call or text to reserve today - we'll help make sure it tows safely.
+                Rental-quality lawn games for graduation parties, lake weekends, birthdays, and cookouts.<br>
+                <span class="fw-bold">Text your date + town</span> and we’ll confirm availability fast.
             </p>
 
             <div class="mb-3">
@@ -259,25 +267,235 @@
                 <span class="badge badge-local text-white px-3 py-2">Veteran Owned & Operated</span>
             </div>
 
-            <div class="d-flex justify-content-center gap-3 mt-4 cta-container">
-                <a href="sms:6037220124" class="btn btn-primary btn-lg">Text Us</a>
-                <a href="tel:6037220124" class="btn btn-outline-primary btn-lg">Call Now</a>
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+                <a href="#reserve" class="btn btn-primary btn-lg">Check Availability</a>
+                <a href="sms:6037220124" class="btn btn-outline-primary btn-lg">Text Us</a>
+                <a href="tel:6037220124" class="btn btn-outline-primary btn-lg">Call</a>
+            </div>
+
+            <div class="mt-4 small" style="opacity:0.95;">
+                Quick links:
+                <a href="#games" class="text-white text-decoration-underline">See games</a>
+                •
+                <a href="#pricing" class="text-white text-decoration-underline">Pricing</a>
+                •
+                <a href="#how" class="text-white text-decoration-underline">How it works</a>
             </div>
         </div>
     </section>
 
-    <!-- VEHICLE COMPATIBILITY -->
-    <section class="py-5 bg-light text-center">
+    <!-- QUICK RESERVE -->
+    <section id="reserve" class="py-5 bg-light">
         <div class="container">
-            <p class="fw-bold mb-2 fs-4" style="color: #2d6a5a;">
-                What can I tow with my vehicle?
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-2" style="color:#2d6a5a;">Reserve in 30 seconds</h2>
+                    <p class="mb-0 small-muted">
+                        No forms. No back-and-forth. Just text us your <span class="fw-semibold">date</span>,
+                        <span class="fw-semibold">town</span>, and what you want.
+                        We’ll reply with availability + total price.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold" for="rqDate">Date</label>
+                                    <input class="form-control" id="rqDate" placeholder="e.g., Sat 6/15" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold" for="rqTown">Town</label>
+                                    <input class="form-control" id="rqTown" placeholder="e.g., Gilford" />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold" for="rqPackage">What do you want?</label>
+                                    <select class="form-select" id="rqPackage">
+                                        <option value="" selected>Select</option>
+                                        <option>Backyard Party Pack (recommended)</option>
+                                        <option>Cornhole Set</option>
+                                        <option>Giant Tumble Tower (Jenga)</option>
+                                        <option>Giant Connect 4</option>
+                                        <option>Not sure / help me choose</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold" for="rqDelivery">Delivery?</label>
+                                    <select class="form-select" id="rqDelivery">
+                                        <option value="" selected>Not sure</option>
+                                        <option>Pickup</option>
+                                        <option>Deliver + pickup</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold" for="rqNotes">Notes (optional)</label>
+                                    <input class="form-control" id="rqNotes"
+                                        placeholder="e.g., graduation party / lake house / want 2 sets of cornhole" />
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2 mt-4">
+                                <a id="smsReserveLink" href="sms:6037220124" class="btn btn-reserve flex-grow-1">Text to
+                                    Reserve</a>
+                                <a href="tel:6037220124" class="btn btn-outline-secondary">Call</a>
+                            </div>
+
+                            <div class="small text-muted mt-3">
+                                Typical response time: <span class="fw-semibold">same day</span>.
+                                Weekend dates book fast.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="fw-bold mb-2 text-center">Party Games</h2>
+            <p class="text-center text-muted mb-5">Rental-quality, cleaned between rentals. Great for kids and adults.
             </p>
-            <p class="mb-4" style="color: #4a4a4a; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Send your year/make/model — we'll confirm the safest option.
-            </p>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#vehicleFitModal">
-                Check Vehicle Compatibility
-            </button>
+
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="game-icon">🎯</div>
+                            <h5 class="fw-bold">Cornhole</h5>
+                            <p class="text-muted mb-0">Classic crowd-pleaser for any backyard, camp, or lake house.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="game-icon">🧱</div>
+                            <h5 class="fw-bold">Giant Tumble Tower</h5>
+                            <p class="text-muted mb-0">Oversized Jenga-style tower. A guaranteed hit at parties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="game-icon">🟡</div>
+                            <h5 class="fw-bold">Giant Connect 4</h5>
+                            <p class="text-muted mb-0">Fast, fun, and easy for all ages. Great for groups.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-light border mt-5 mb-0">
+                <div class="small">
+                    <span class="fw-semibold">Want a custom package?</span>
+                    Text us your party size + vibe and we’ll recommend the best setup.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold mb-2 text-center">Simple Pricing</h2>
+            <p class="text-center text-muted mb-5">Weekend-friendly. Transparent. No surprises.</p>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold">Backyard Party Pack</h5>
+                            <p class="text-muted">Best value for most parties.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li>✔ Cornhole</li>
+                                <li>✔ Giant Tumble Tower</li>
+                                <li>✔ Giant Connect 4</li>
+                                <li>✔ Quick setup instructions included</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <hr class="my-3">
+                                <div class="d-flex justify-content-around mb-2">
+                                    <div class="text-center">
+                                        <div class="fw-bold text-success fs-4">$300</div>
+                                        <div class="small text-muted">Weekend</div>
+                                    </div>
+                                </div>
+                                <p class="small text-muted mb-0">* Delivery available (quote by town)</p>
+                                <hr class="my-3">
+                                <a href="#reserve" class="btn btn-reserve w-100">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="fw-bold">Single Game</h5>
+                            <p class="text-muted">Add a crowd favorite.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li>✔ Cornhole set</li>
+                                <li>✔ Giant Tumble Tower</li>
+                                <li>✔ Giant Connect 4</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <hr class="my-3">
+                                <div class="d-flex justify-content-around mb-2">
+                                    <div class="text-center">
+                                        <div class="fw-bold text-primary fs-4">$85</div>
+                                        <div class="small text-muted">Day</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="fw-bold text-success fs-4">$150</div>
+                                        <div class="small text-muted">Weekend</div>
+                                    </div>
+                                </div>
+                                <p class="small text-muted mb-0">* Mix & match. Multi-game discounts available.</p>
+                                <hr class="my-3">
+                                <a href="#reserve" class="btn btn-reserve w-100">Reserve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm border-success">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="fw-bold mb-0">Add Delivery</h5>
+                                <span class="badge text-bg-success">Popular</span>
+                            </div>
+                            <p class="text-muted mt-2">We can drop off + pick up so you don’t have to.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li>✔ Delivered to your yard / venue</li>
+                                <li>✔ Pickup after your event</li>
+                                <li>✔ Great for lake houses & venues</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <hr class="my-3">
+                                <div class="text-center">
+                                    <div class="fw-bold fs-4" style="color:#2d6a5a;">Quote by town</div>
+                                    <div class="small text-muted">Text your address or town</div>
+                                </div>
+                                <hr class="my-3">
+                                <a href="#reserve" class="btn btn-reserve w-100">Get Delivery Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center text-muted small mt-4">
+                Pricing shown is a starting point. Update these numbers anytime — the site stays simple.
+            </div>
         </div>
     </section>
 
@@ -288,107 +506,88 @@
 
             <div class="row text-center g-4">
                 <div class="col-md-4">
-                    <h5>1. Call or Text</h5>
-                    <p>Tell us what you need and when.</p>
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="game-icon">📅</div>
+                            <h5 class="fw-bold">1. Pick Your Date</h5>
+                            <p class="text-muted mb-0">Tell us when + your town. We’ll confirm availability fast.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h5>2. Pick Up</h5>
-                    <p>Local pickup at a convenient Lakes Region location.
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="game-icon">📦</div>
+                            <h5 class="fw-bold">2. Pickup or Delivery</h5>
+                            <p class="text-muted mb-0">Grab it locally or have us drop it off and pick it up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="game-icon">🎉</div>
+                            <h5 class="fw-bold">3. Party & Return</h5>
+                            <p class="text-muted mb-0">Easy instructions included. Have fun — we’ll handle the rest.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h5>3. Haul & Return</h5>
-                    <p>Use it, bring it back, done.</p>
+            <div class="alert alert-light border mt-5 mb-0">
+                <div class="small">
+                    <span class="fw-semibold">Weather plan:</span> If it rains, we’ll work with you to reschedule when
+                    possible.
                 </div>
             </div>
 
         </div>
     </section>
 
-
-    <!-- TRAILERS -->
+    <!-- SECONDARY: TRAILERS (DE-EMPHASIZED) -->
     <section id="trailers" class="py-5 bg-light">
         <div class="container">
-            <h2 class="fw-bold mb-4 text-center">Available Trailers</h2>
+            <h2 class="fw-bold mb-2 text-center">Also Available: Trailer Rentals</h2>
+            <p class="text-center text-muted mb-4">Need a trailer too? We can help — text us what you’re hauling.</p>
 
             <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 d-flex flex-column">
+                <div class="col-lg-6">
+                    <div class="card h-100 d-flex flex-column shadow-sm">
                         <img src="assets/dump_trailer.png" class="card-img-top" alt="5x10 Dump Trailer"
-                            style="height: 250px; object-fit: contain; padding: 1rem; background: #f8f9fa;">
+                            style="height: 220px; object-fit: contain; padding: 1rem; background: #f8f9fa;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">5 x 10 Dump Trailer</h5>
-                            <p class="card-text">
-                                Perfect for cleanup jobs, small projects, and landscaping.
+                            <h5 class="card-title fw-bold">5 x 10 Dump Trailer</h5>
+                            <p class="card-text text-muted">
+                                Cleanup jobs, landscaping, small projects.
                             </p>
-                            <ul class="list-unstyled mb-4">
-                                <li>✔ 7,000lb gross vehicle weight (when loaded)</li>
-                                <li>✔ Payload varies by load & distribution, ask and we'll confirm</li>
-                                <li>✔ Tarp included</li>
-                                <li>✔ Ramps included</li>
-                                <li>✔ Electric brakes</li>
-                                <li>✔ Half-ton capable (with tow package)</li>
-                                <li>✔ Brake controller required</li>
+                            <ul class="list-unstyled mb-4 text-muted small">
+                                <li>✔ 7,000lb GVWR</li>
+                                <li>✔ Electric brakes (brake controller required)</li>
+                                <li>✔ Tarp + ramps included</li>
                             </ul>
                             <div class="mt-auto">
-                                <hr class="my-3">
-                                <h6 class="fw-bold mb-3">Pricing</h6>
-                                <div class="d-flex justify-content-around mb-2">
-                                    <div class="text-center">
-                                        <div class="fw-bold text-primary fs-4">$120</div>
-                                        <div class="small text-muted">Daily</div>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="fw-bold text-success fs-4">$250</div>
-                                        <div class="small text-muted">Weekend</div>
-                                    </div>
-                                </div>
-                                <p class="small text-muted mb-0 mt-2">* Multi-day discounts available</p>
-                                <p class="small text-muted mb-0 mt-2">* Cash, check, or credit card accepted</p>
-                                <hr class="my-3">
-                                <div class="text-center">
-                                    <a href="tel:6037220124" class="btn btn-reserve w-100">Reserve Now</a>
-                                </div>
+                                <a href="#reserve" class="btn btn-reserve w-100">Ask About Availability</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card h-100 d-flex flex-column">
+                <div class="col-lg-6">
+                    <div class="card h-100 d-flex flex-column shadow-sm">
                         <img src="assets/utility_trailer.png" class="card-img-top" alt="6x12 Utility Trailer"
-                            style="height: 250px; object-fit: contain; padding: 1rem; background: #f8f9fa;">
+                            style="height: 220px; object-fit: contain; padding: 1rem; background: #f8f9fa;">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">6 x 12 Utility Trailer</h5>
-                            <p class="card-text">
-                                Great for furniture, ATVs, yard equipment, and general hauling.
+                            <h5 class="card-title fw-bold">6 x 12 Utility Trailer</h5>
+                            <p class="card-text text-muted">
+                                Furniture, ATVs, yard equipment, general hauling.
                             </p>
-                            <ul class="list-unstyled mb-4">
+                            <ul class="list-unstyled mb-4 text-muted small">
                                 <li>✔ Easy to tow</li>
                                 <li>✔ Tie-down points</li>
-                                <li>✔ No special equipment needed</li>
                                 <li>✔ Ideal for weekend moves</li>
                             </ul>
                             <div class="mt-auto">
-                                <hr class="my-3">
-                                <h6 class="fw-bold mb-3">Pricing</h6>
-                                <div class="d-flex justify-content-around mb-2">
-                                    <div class="text-center">
-                                        <div class="fw-bold text-primary fs-4">$60</div>
-                                        <div class="small text-muted">Daily</div>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="fw-bold text-success fs-4">$120</div>
-                                        <div class="small text-muted">Weekend</div>
-                                    </div>
-                                </div>
-                                <p class="small text-muted mb-0 mt-2">* Multi-day discounts available</p>
-                                <p class="small text-muted mb-0 mt-2">* Cash, check, or credit card accepted</p>
-                                <hr class="my-3">
-                                <div class="text-center">
-                                    <a href="tel:6037220124" class="btn btn-reserve w-100">Reserve Now</a>
-                                </div>
+                                <a href="#reserve" class="btn btn-reserve w-100">Ask About Availability</a>
                             </div>
                         </div>
                     </div>
@@ -397,13 +596,12 @@
             </div>
         </div>
     </section>
-
 
     <!-- CONTACT -->
     <section id="contact" class="bg-dark text-white py-5">
         <div class="container text-center">
             <h2 class="fw-bold mb-3">Contact CowDog Rentals</h2>
-            <p class="lead">
+            <p class="lead mb-2">
                 📍 Lakes Region, New Hampshire<br>
                 📞 <a href="tel:6037220124" class="text-white text-decoration-none">603-722-0124</a><br>
                 ✉️ <a href="mailto:jon@cowdogrentals.com"
@@ -411,158 +609,70 @@
                 🌐 cowdogrentals.com
             </p>
 
-            <p class="mt-4 small text-white">
-                Valid driver's license required. Renter responsible for damage. No trash disposal included.
+            <p class="mt-4 small text-white-50">
+                Rental items must be returned in reasonable condition. Customer responsible for loss/damage.
             </p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="py-3 bg-black text-center text-white small">
-        © 2026 CowDog Rentals • Good Dog. Good Trailers.
+        © 2026 CowDog Rentals • Backyard & Event Rentals • Lakes Region, NH
     </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta d-md-none">
+        <div class="container">
+            <div class="d-flex gap-2">
+                <a href="sms:6037220124" class="btn btn-primary w-50">Text</a>
+                <a href="#reserve" class="btn btn-reserve w-50">Reserve</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-
-    <!-- Vehicle Fit Check Modal -->
-    <div class="modal fade" id="vehicleFitModal" tabindex="-1" aria-labelledby="vehicleFitModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="vehicleFitModalLabel">Will this trailer work with my vehicle?
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <p class="text-muted mb-4">
-                        Answer a few quick questions and we'll help you pick the right trailer.
-                        (If you're not sure, leave it blank — we can still help.)
-                    </p>
-
-                    <form id="vehicleFitForm">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label fw-semibold" for="vehicle">Vehicle (year/make/model)</label>
-                                <input class="form-control" id="vehicle" placeholder="e.g., 2021 Ford F-150 3.5L" />
-                            </div>
-
-                            <div class="col-md-6">
-                                <label class="form-label fw-semibold" for="trailerType">Trailer you want</label>
-                                <select class="form-select" id="trailerType">
-                                    <option value="" selected>Not sure yet</option>
-                                    <option>5 x 10 Dump Trailer</option>
-                                    <option>6 x 12 Utility Trailer</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label fw-semibold" for="hitch">Hitch receiver size</label>
-                                <select class="form-select" id="hitch">
-                                    <option value="" selected>Not sure</option>
-                                    <option>2-inch</option>
-                                    <option>2.5-inch</option>
-                                    <option>1.25-inch</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label fw-semibold" for="brakeController">Brake controller?</label>
-                                <select class="form-select" id="brakeController">
-                                    <option value="" selected>Not sure</option>
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label fw-semibold" for="rentalDates">Dates needed</label>
-                                <input class="form-control" id="rentalDates" placeholder="e.g., Sat–Sun (Mar 2–3)" />
-                            </div>
-
-                            <div class="col-12">
-                                <label class="form-label fw-semibold" for="notes">What are you hauling?
-                                    (optional)</label>
-                                <textarea class="form-control" id="notes" rows="3"
-                                    placeholder="e.g., brush + small stumps / moving furniture / gravel"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="alert alert-light border mt-4 mb-0">
-                            <div class="small">
-                                <span class="fw-semibold">Tip:</span> If you’re towing a dump trailer, you’ll usually
-                                need a <span class="fw-semibold">2-inch receiver</span>
-                                and a <span class="fw-semibold">brake controller</span>. If you’re unsure, we’ll walk
-                                you through it.
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="modal-footer d-flex justify-content-between flex-wrap gap-2">
-                    <div class="text-muted small">
-                        Prefer talking? Call: <a href="tel:6037220124" class="text-decoration-none">603-722-0124</a>
-                    </div>
-
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                        <a id="smsFitLink" class="btn btn-primary" href="sms:6037220124">
-                            Text This Info
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
         (function () {
-            const formIds = ["vehicle", "trailerType", "hitch", "brakeController", "rentalDates", "notes"];
-            const smsLink = document.getElementById("smsFitLink");
+            const ids = ["rqDate", "rqTown", "rqPackage", "rqDelivery", "rqNotes"];
+            const smsLink = document.getElementById("smsReserveLink");
 
             function buildMessage() {
-                const vehicle = document.getElementById("vehicle").value.trim();
-                const trailerType = document.getElementById("trailerType").value.trim();
-                const hitch = document.getElementById("hitch").value.trim();
-                const brakeController = document.getElementById("brakeController").value.trim();
-                const rentalDates = document.getElementById("rentalDates").value.trim();
-                const notes = document.getElementById("notes").value.trim();
+                const date = document.getElementById("rqDate").value.trim();
+                const town = document.getElementById("rqTown").value.trim();
+                const pkg = document.getElementById("rqPackage").value.trim();
+                const delivery = document.getElementById("rqDelivery").value.trim();
+                const notes = document.getElementById("rqNotes").value.trim();
 
-                let msg = "Vehicle Fit Check:%0A";
-                if (vehicle) msg += `- Vehicle: ${encodeURIComponent(vehicle)}%0A`;
-                if (trailerType) msg += `- Trailer: ${encodeURIComponent(trailerType)}%0A`;
-                if (hitch) msg += `- Hitch: ${encodeURIComponent(hitch)}%0A`;
-                if (brakeController) msg += `- Brake controller: ${encodeURIComponent(brakeController)}%0A`;
-                if (rentalDates) msg += `- Dates: ${encodeURIComponent(rentalDates)}%0A`;
-                if (notes) msg += `- Hauling: ${encodeURIComponent(notes)}%0A`;
-                msg += "Can you confirm what will tow safely and availability?";
+                let msg = "CowDog Rentals - Party Game Rental Request:%0A";
+                if (date) msg += `- Date: ${encodeURIComponent(date)}%0A`;
+                if (town) msg += `- Town: ${encodeURIComponent(town)}%0A`;
+                if (pkg) msg += `- Items: ${encodeURIComponent(pkg)}%0A`;
+                if (delivery) msg += `- Delivery: ${encodeURIComponent(delivery)}%0A`;
+                if (notes) msg += `- Notes: ${encodeURIComponent(notes)}%0A`;
+                msg += "Can you confirm availability and total price?";
 
                 return msg;
             }
 
             function updateSmsHref() {
-                // iOS vs Android differ slightly; this pattern works well for most:
                 const base = "sms:6037220124";
                 const message = buildMessage();
                 smsLink.setAttribute("href", `${base}?&body=${message}`);
             }
 
-            formIds.forEach(id => {
+            ids.forEach(id => {
                 const el = document.getElementById(id);
                 el.addEventListener("input", updateSmsHref);
                 el.addEventListener("change", updateSmsHref);
             });
 
-            // Initialize on load
             updateSmsHref();
         })();
     </script>
-
 
 </body>
 
